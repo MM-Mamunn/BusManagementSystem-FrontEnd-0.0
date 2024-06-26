@@ -1,4 +1,5 @@
 import axios from "axios";
+import "./CSS/driver_view.css";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -17,18 +18,22 @@ function Driver_view() {
   }, []);
   return (
     <>
-      <table class="border border-collapse border-blue-500">
+      <table class=" border-blue-500 rounded-sm">
         <thead>
           <tr>
+            <th class="p-2 bg-blue-200 ">Driver id</th>
             <th class="p-2 bg-blue-200">Name</th>
+            <th class="p-2 bg-blue-200">Age</th>
             <th class="p-2 bg-blue-200">License No</th>
           </tr>
         </thead>
         <tbody>
           {drivers?.map((iterate) => (
             <tr key={iterate?.license_no} class="hover:bg-blue-100">
-              <td class="p-2">{iterate?.name}</td>
-              <td class="p-2">{iterate?.license_no}</td>
+              <td class="p-2 bg-green-200">{iterate?.driver_id}</td>
+              <td class="p-2 bg-green-200">{iterate?.name}</td>
+              <td class="p-2 bg-green-200">{iterate?.age}</td>
+              <td class="p-2 bg-green-200">{iterate?.license_no}</td>
             </tr>
           ))}
         </tbody>
