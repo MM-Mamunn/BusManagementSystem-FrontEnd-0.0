@@ -8,6 +8,7 @@ import Success from "./pages/success";
 import Driver_view from "./pages/driver_view";
 import Bus_view from "./pages/bus_view";
 import Failed from "./pages/failed";
+import Driver_home from "./pages/drivers_home";
 //import  './driver_insert.jsx';
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/driver_view" element={<Driver_view/>} />
             <Route path="/failed" element={<Failed/>} />
             <Route path="/bus_view" element={<Bus_view/>} />
+            <Route path="/drivers_home" element={<Driver_home/>} />
           </Routes>
         </BrowserRouter>
       </div>

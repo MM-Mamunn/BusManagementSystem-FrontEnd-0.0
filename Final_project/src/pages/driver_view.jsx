@@ -1,4 +1,5 @@
 import axios from "axios";
+import Header from '../components/nav'
 import "./CSS/driver_view.css";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -18,7 +19,8 @@ function Driver_view() {
   }, []);
   return (
     <>
-      <table class=" border-blue-500 rounded-sm">
+     <Header/>
+      <table class=" border-blue-500 rounded-sm ml-80 mt-4">
         <thead>
           <tr>
             <th class="p-2 bg-blue-200 ">Driver id</th>
