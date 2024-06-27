@@ -21,8 +21,9 @@ function Driver_insert() {
   return (
     <>
      <Header/>
-      <h1>Driver Information Form</h1>
+      
       <form onSubmit={handleSubmit}>
+      <h2 ClassName="bg-yellow-500">Driver Information Form</h2>
         <input
           type="text"
           placeholder="driver_id"
