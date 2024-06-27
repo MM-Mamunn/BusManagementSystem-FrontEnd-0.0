@@ -1,5 +1,5 @@
 import axios from "axios";
-import Header from '../components/nav'
+import Header from "../components/nav";
 import "./CSS/driver_view.css";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -19,7 +19,7 @@ function Driver_view() {
   }, []);
   return (
     <>
-     <Header/>
+      <Header />
       <table class=" border-blue-500 rounded-sm ml-80 mt-4">
         <thead>
           <tr>
