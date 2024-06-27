@@ -19,8 +19,8 @@ export default function Header() {
             <a href="/bus_home" class="text-white hover:text-blue-200">
               Bus Home
             </a>
-            <a href="#" class="text-white hover:text-blue-200">
-              Contact
+            <a href="/about_us" class="text-white hover:text-blue-200">
+              About Us
             </a>
           </div>
           <a href="#" class="bg-indigo-950 p-2  ml-5 text-white hover:text-blue-200 rounded">
