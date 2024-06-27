@@ -1,6 +1,7 @@
 import axios from "axios";
 import Header from "../components/nav";
-import "./CSS/driver_view.css";
+// import "./CSS/bus_view.css";
+// import "./CSS/driver_view.css";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -21,7 +22,10 @@ function Bus_view() {
     <>
    
    <Header />
-      <table className=" border-blue-500 rounded-sm  ml-80 mt-4" >
+   <div class="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-300 via-teal-300 to-gray-700 relative"> 
+   <div class="bg-white rounded-lg shadow-xl overflow-hidden w-4/5 max-w-lg mx-auto"> 
+   <table class="mb-2 min-w-full bg-gray-800 text-black"> 
+   <caption class="text-2xl font-bold p-4 text-center bg-gray-50 text-gray-900 border-b border-gray-300 animate-pulse">Bus View</caption> 
         <thead>
           <tr >
           <th className="p-2 bg-blue-200 ">Bus ID</th>
@@ -42,7 +46,32 @@ function Bus_view() {
           ))}
         </tbody>
       </table>
-
+      </div>
+      </div>
+    {/* <div class="table-container"> 
+        <table class="table"> 
+            <caption class="caption">Bus View</caption> 
+            <thead> 
+                <tr> 
+                    <th>Bus ID</th> 
+                    <th>Category</th> 
+                    <th>License_No</th> 
+                    <th>Assign</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+            {bus?.map((iterate) => (
+            <tr key={iterate?.bus_id} className="hover:bg-blue-100">
+              
+              <td className="p-2 bg-green-200">{iterate?.bus_id}</td>  
+              <td className="p-2 bg-green-200">{iterate?.category}</td>
+              <td className="p-2 bg-green-200">{iterate?.license_no}</td>
+              <td className="p-2 bg-green-200">{iterate?.assign}</td>
+            </tr>
+          ))}
+            </tbody> 
+        </table> 
+    </div>  */}
     </>
   );
 }

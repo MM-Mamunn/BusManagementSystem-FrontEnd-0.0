@@ -4,6 +4,7 @@ import "./CSS/driver_view.css";
 import { useState } from "react";
 import { useEffect } from "react";
 
+import Tripheader from '../components/trip_nav';
 function Trip_all() {
   const [trips, setdrivers] = useState([]);
   useEffect(() => {
@@ -20,6 +21,7 @@ function Trip_all() {
   return (
     <>
      <Header/>
+     <Tripheader/>
       <table class=" border-blue-500 rounded-sm ml-80 my-4">
         <thead>
           <tr>

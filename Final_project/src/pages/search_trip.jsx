@@ -3,6 +3,7 @@ import Header from "../components/nav";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import Tripheader from '../components/trip_nav';
 
 function Search_trip() {
   const [drivers, setdrivers] = useState([]);
@@ -28,6 +29,7 @@ function Search_trip() {
   return (
     <>
       <Header />
+      <Tripheader/>
       <form className="ml-80 mt-2 w-1/2" onSubmit={handleSubmit}>
         <input 
           type="text"

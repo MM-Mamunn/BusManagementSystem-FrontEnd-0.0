@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../components/nav";
 import axios from "axios";
+import "./CSS/main.css";
 import { useState } from "react";
 import { useEffect } from "react";
+import Tripheader from '../components/trip_nav';
 
 function Count_trip() {
   const [drivers, setdrivers] = useState([]);
@@ -28,7 +30,8 @@ function Count_trip() {
   return (
     <>
       <Header />
-      <form className="ml-80 mt-2 w-1/2" onSubmit={handleSubmit}>
+      <Tripheader/>
+      <form id= "count_trip_box" className="ml-80 mt-2 w-1/2" onSubmit={handleSubmit}>
         <input 
           type="text"
           placeholder="driver_id"

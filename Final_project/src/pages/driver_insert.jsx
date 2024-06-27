@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../components/nav";
+import Driverheader from "../components/driver_nav";
 import axios from "axios";
 
 function Driver_insert() {
@@ -21,7 +22,7 @@ function Driver_insert() {
   return (
     <>
       <Header />
-      
+      <Driverheader/>
       <form onSubmit={handleSubmit}>
         <a className="bg-green-500 text-white px-1 py-1 mx-2 rounded  my-2  " href="/driver_insert" >Insert Driver</a>
         <input
