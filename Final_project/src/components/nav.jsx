@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import busImage from '../pages/bus2.png';
+import busImage from '../pages/image/bus2.png';
 export default function Header() {
   return (
     <>

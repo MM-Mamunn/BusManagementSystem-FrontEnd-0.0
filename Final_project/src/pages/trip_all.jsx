@@ -3,7 +3,6 @@ import Header from '../components/nav'
 import "./CSS/driver_view.css";
 import { useState } from "react";
 import { useEffect } from "react";
-
 import Tripheader from '../components/trip_nav';
 function Trip_all() {
   const [trips, setdrivers] = useState([]);

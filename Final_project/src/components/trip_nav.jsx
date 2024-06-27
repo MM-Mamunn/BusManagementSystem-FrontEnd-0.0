@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import tripImage from '../pages/trip.png';
+import tripImage from '../pages/image/trip.png';
 export default function Tripheader() {
   return (
     <>

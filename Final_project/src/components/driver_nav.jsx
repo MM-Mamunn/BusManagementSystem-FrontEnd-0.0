@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import driverImage from '../pages/driver.png';
+import driverImage from '../pages/image/driver.png';
 import "../pages/CSS/driver_view.css";
 export default function Driverheader() {
   return (

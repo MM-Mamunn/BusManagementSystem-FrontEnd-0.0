@@ -1,5 +1,5 @@
 import Header from '../components/nav'
-import busImage from './bus2.png';
+import busImage from './image/bus2.png';
 export default function Home(){
     return(
         <>

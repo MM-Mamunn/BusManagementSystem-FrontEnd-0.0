@@ -1,7 +1,7 @@
 
 import Header from '../components/nav'
 
-import mamunImage from './mamun.jpg';
+import mamunImage from './image/mamun.jpg';
 
 function About_us() {
   return (
