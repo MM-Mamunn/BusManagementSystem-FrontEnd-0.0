@@ -12,6 +12,7 @@ import Trip_home from "./pages/trips_home";
 import Search_trip from "./pages/search_trip";
 import Trip_all from "./pages/trip_all";
 import Bus_home from "./pages/bus_home";
+import Count_trip from "./pages/count_trip";
 //import  './driver_insert.jsx';
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/bus_view" element={<Bus_view/>} />
             <Route path="/drivers_home" element={<Driver_home/>} />
             <Route path="/search_trip" element={<Search_trip/>} />
+            <Route path="/count_trip" element={<Count_trip/>} />
             <Route path="/trip_all" element={<Trip_all/>} />
             <Route path="/trips_home" element={<Trip_home/>} />
             <Route path="/bus_home" element={<Bus_home/>} />

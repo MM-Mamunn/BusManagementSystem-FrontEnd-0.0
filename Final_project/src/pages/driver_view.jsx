@@ -20,9 +20,13 @@ function Driver_view() {
   return (
     <>
       <Header />
+     
       <table class=" border-blue-500 rounded-sm ml-80 mt-4">
         <thead>
           <tr>
+            <td colspan="3"> <a className="bg-green-500 text-white px-1 py-1 mx-36 rounded  ml-20 " href="/driver_view" >All Drivers</a></td>
+          </tr>
+          <tr>          
             <th class="p-2 bg-blue-200 ">Driver id</th>
             <th class="p-2 bg-blue-200">Name</th>
             <th class="p-2 bg-blue-200">Age</th>
