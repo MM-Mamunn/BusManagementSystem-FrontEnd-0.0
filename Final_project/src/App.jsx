@@ -15,6 +15,8 @@ import Trip_all from "./pages/trip_all";
 import Bus_home from "./pages/bus_home";
 import Count_trip from "./pages/count_trip";
 import About_us from "./pages/about_us";
+import Bus_distance from "./pages/bus_distance";
+import Bus_delete from "./pages/bus_delete";
 //import  './driver_insert.jsx';
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
             <Route path="/trips_home" element={<Trip_home/>} />
             <Route path="/bus_home" element={<Bus_home/>} />
             <Route path="/about_us" element={<About_us/>} />
+            <Route path="/total_distance" element={<Bus_distance/>} />
+            <Route path="/bus_delete" element={<Bus_delete/>} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -1,10 +1,10 @@
 import Header from '../components/nav'
-
+import "./CSS/main.css";
 export default function Success(){
     return(
         <>
         <Header/>
-        <h3>Successfull</h3>
+        <div id = "success" >Successfull</div>
         </>
     )
 }

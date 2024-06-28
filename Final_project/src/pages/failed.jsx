@@ -4,7 +4,7 @@ export default function Failed(){
     return(
         <>
         <Header/>
-        <h3>Failed</h3>
+        <div id = "failed">Failed</div>
         </>
     )
 }

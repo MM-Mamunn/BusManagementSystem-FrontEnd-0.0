@@ -22,10 +22,10 @@ function Bus_view() {
     <>
    
    <Header />
-   <div class="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-300 via-teal-300 to-gray-700 relative"> 
-   <div class="bg-white rounded-lg shadow-xl overflow-hidden w-4/5 max-w-lg mx-auto"> 
-   <table class="mb-2 min-w-full bg-gray-800 text-black"> 
-   <caption class="text-2xl font-bold p-4 text-center bg-gray-50 text-gray-900 border-b border-gray-300 animate-pulse">Bus View</caption> 
+   <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-300 via-teal-300 to-gray-700 relative"> 
+   <div className="bg-white rounded-lg shadow-xl overflow-hidden w-4/5 max-w-lg mx-auto"> 
+   <table className="mb-2 min-w-full bg-gray-800 text-black"> 
+   <caption className="text-2xl font-bold p-4 text-center bg-gray-50 text-gray-900 border-b border-gray-300 animate-pulse">Bus View</caption> 
         <thead>
           <tr >
           <th className="p-2 bg-blue-200 ">Bus ID</th>
@@ -48,9 +48,9 @@ function Bus_view() {
       </table>
       </div>
       </div>
-    {/* <div class="table-container"> 
-        <table class="table"> 
-            <caption class="caption">Bus View</caption> 
+    {/* <div className="table-container"> 
+        <table className="table"> 
+            <caption className="caption">Bus View</caption> 
             <thead> 
                 <tr> 
                     <th>Bus ID</th> 

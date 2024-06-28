@@ -30,7 +30,7 @@ function Search_trip() {
     <>
       <Header />
       <Tripheader/>
-      <form className="ml-80 mt-2 w-1/2" onSubmit={handleSubmit}>
+      <form className="mt-4 w-1/2" onSubmit={handleSubmit}>
         <input 
           type="text"
           placeholder="driver_id"
@@ -45,7 +45,7 @@ function Search_trip() {
       
 
       {drivers.length !== 0 && (
-        <table className=" border-blue-500 rounded-sm ml-80 mt-4 ">
+        <table style = {{marginLeft:"37vw", width:"26vw"}}className=" border-blue-500 rounded-sm  mt-4 ">
           <thead>
             <tr>
               <th className="p-2 bg-blue-200 ">Driver id</th>
