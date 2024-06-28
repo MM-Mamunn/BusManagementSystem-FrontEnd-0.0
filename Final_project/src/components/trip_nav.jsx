@@ -6,8 +6,7 @@ export default function Tripheader() {
     <>
       <nav class="bg-red-500 ">
         <div class="flex items-center justify-between">
-          <div class="flex space-x-6">    
-                       
+          <div class="flex space-x-6">         
 
           <img className="w-16 h-12" src={tripImage} alt="Bus" />
             <a  style={{padding: "10px"}} href="/trip_all" class="text-white hover:text-blue-200">
@@ -16,17 +15,17 @@ export default function Tripheader() {
             <a style={{padding: "10px"}} href="/search_trip" class="text-white hover:text-blue-200">
               Search Trip
             </a>
-            <a style={{padding: "10px"}} href="/drivers_home" class="text-white hover:text-blue-200">
-              Drivers Home
+            <a style={{padding: "10px"}} href="/count_trip" class="text-white hover:text-blue-200">
+              Count Trips
             </a>
-            <a style={{padding: "10px"}} href="/bus_home" class="text-white hover:text-blue-200">
-              Bus Home
+            <a style={{padding: "10px"}} href="/trip_insert" class="text-white hover:text-blue-200">
+              Insert New trip
             </a>
             <a style={{padding: "10px"}} href="#" class="text-white hover:text-blue-200">
-              Contact
+              Cancel Trip
             </a>
           </div>
-          <a style={{padding: "10px"}} href="#" class="bg-indigo-950 p-2  ml-5 text-white hover:text-blue-200 rounded">
+          <a href ="/trips_home" style={{padding: "10px",width:"130px"}} class="bg-indigo-950 p-2  text-white hover:text-blue-200 rounded">
              Trips Home
             </a>
         </div>

@@ -7,7 +7,7 @@ function About_us() {
   return (
     <>
      <Header/>
-     <body class="bg-blue-100 min-h-screen flex flex-col items-center justify-center p-4"> 
+     <body style = {{minHeight:"100vh"}} class="bg-blue-100 min-h-screen flex flex-col items-center justify-center p-4"> 
     <h1 class="text-4xl font-bold mb-8"><u>About Us</u></h1> 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-full max-w-4xl"> 
  
@@ -44,10 +44,10 @@ function About_us() {
         </div> 
  
     </div> 
-</body>
 <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
       <Footer/>
       </footer>
+</body>
     </>
   );
 }

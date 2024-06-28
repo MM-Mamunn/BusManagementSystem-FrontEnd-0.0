@@ -24,7 +24,10 @@ function Trip_all() {
     <div style ={{position:"sticky", top: "0", left: "0"}}>
      <Tripheader/>
      </div>
-      <table class=" border-blue-500 rounded-sm ml-80 my-4">
+     <body class="bg-gradient-to-br from-blue-400 to-green-300 min-h-screen flex flex-col items-center  " 
+      style={{minHeight:"120vh", margin:"0",padding:"0",backgroundImage: "url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", minHeight:"110vh" }}> 
+
+      <table  class=" border-blue-500 rounded-sm my-4">
         <thead>
           <tr>
             <th class="p-2 bg-blue-200 ">Driver id</th>
@@ -46,9 +49,10 @@ function Trip_all() {
           ))}
         </tbody>
       </table>
-      <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
-      <Footer/>
-      </footer>
+      <footer style={{ position: "sticky", top: "100vh", width: "100vw" }}>
+          <Footer />
+        </footer>
+      </body>
     </>
   );
 }

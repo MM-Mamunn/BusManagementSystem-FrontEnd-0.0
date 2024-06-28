@@ -27,6 +27,8 @@ function Bus_delete() {
   return (
     <>
       <Header />
+      <body style = {{minHeight:"100vh"}}>
+
       {/* <Tripheader/> */}
       <form  className=" mt-2 w-1/2" onSubmit={handleSubmit}>
         <input 
@@ -43,6 +45,7 @@ function Bus_delete() {
       <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
       <Footer/>
       </footer>
+</body>
     </>
   );
 }

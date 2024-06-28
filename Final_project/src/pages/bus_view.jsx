@@ -75,7 +75,7 @@ function Bus_view() {
             </tbody> 
         </table> 
     </div>  */}
-    <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+    <footer style ={{position: "sticky" , top:"87vh", width:"100vw"}}>
       <Footer/>
       </footer>
     </>

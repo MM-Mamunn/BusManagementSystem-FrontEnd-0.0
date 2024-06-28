@@ -32,6 +32,7 @@ function Bus_distane() {
     <>
       <Header />
       {/* <Tripheader/> */}
+
       <form style={{marginLeft:"30vw" , width:"40vw"}} id= "bus_distane_box" className="mt-4 w-1/2" onSubmit={handleSubmit}>
       <label for="too">From</label>
         <input 
@@ -53,6 +54,29 @@ function Bus_distane() {
           Totall distances
         </button>
       </form>
+
+{/* 
+      <form style={{marginLeft:"30vw" , width:"40vw"}} id= "bus_distane_box" className="mt-4 w-1/2" onSubmit={handleSubmit}>
+      <label for="too">From</label>
+        <input 
+          type="Date"
+          placeholder="From "
+          id="fromm"
+          name="fromm"
+          required
+        />
+        <label for="too">To</label>
+        <input 
+          type="Date"
+          placeholder="To"
+          id="too"
+          name="too"
+          required
+        />
+        <button class="mt-4 block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Totall distances
+        </button>
+      </form> */}
       
 
       {drivers.length !== 0 && (
@@ -76,6 +100,7 @@ function Bus_distane() {
       <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
       <Footer/>
       </footer>
+      
     </>
   );
 }

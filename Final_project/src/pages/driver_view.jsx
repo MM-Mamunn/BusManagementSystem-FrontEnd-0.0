@@ -22,6 +22,7 @@ function Driver_view() {
   return (
     <>
       <Header />
+      <body style = {{minHeight:"100vh"}}>
       <div style ={{position:"sticky", top: "0", left: "0"}}>
         <Driverheader/>
       </div>
@@ -52,10 +53,12 @@ function Driver_view() {
           </table>
         </div>
       </div>
+      <footer style ={{position: "sticky" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
+      </body>
     </>
   );
 }
-<footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
-      <Footer/>
-      </footer>
+
 export default Driver_view;

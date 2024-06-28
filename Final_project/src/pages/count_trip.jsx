@@ -35,6 +35,9 @@ function Count_trip() {
       <div style={{ position: "sticky", top: "0", left: "0" }}>
         <Tripheader />
       </div>
+      <body class="bg-gradient-to-br from-blue-400 to-green-300 min-h-screen flex flex-col items-center  " 
+      style={{minHeight:"120vh", margin:"0",padding:"0",backgroundImage: "url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", minHeight:"110vh" }}> 
+
       <form
         id="count_trip_box"
         className="ml-80 mt-2 w-1/2"
@@ -74,9 +77,10 @@ function Count_trip() {
           </tbody>
         </table>
       )}
-        <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
-      <Footer/>
-      </footer>
+               <footer style={{ position: "sticky", top: "100vh", width: "100vw" }}>
+          <Footer />
+        </footer>
+      </body>
     </>
   );
 }
