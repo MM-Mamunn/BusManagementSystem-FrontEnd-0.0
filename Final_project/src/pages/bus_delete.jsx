@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import Footer from '../components/footer'
+import Busheader from '../components/bus_nav';
 // import Tripheader from '../components/trip_nav';
 
 function Bus_delete() {
@@ -27,7 +28,11 @@ function Bus_delete() {
   return (
     <>
       <Header />
-      <body style = {{minHeight:"100vh"}}>
+      <div style ={{position:"sticky", top: "0", left: "0"}}>
+     <Busheader/>
+     </div>
+      <body class="bg-gradient-to-br from-blue-400 to-green-300 min-h-screen flex flex-col items-center  " 
+      style={{minHeight:"120vh", margin:"0",padding:"0",backgroundImage: "url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", minHeight:"110vh" }}> 
 
       {/* <Tripheader/> */}
       <form  className=" mt-2 w-1/2" onSubmit={handleSubmit}>
@@ -42,7 +47,7 @@ function Bus_delete() {
           Delete
         </button>
       </form>
-      <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <footer style ={{position: "sticky" , top:"100vh", width:"100vw"}}>
       <Footer/>
       </footer>
 </body>

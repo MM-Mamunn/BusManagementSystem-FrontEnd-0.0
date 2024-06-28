@@ -5,6 +5,8 @@ import Footer from '../components/footer'
 // import "./CSS/driver_view.css";
 import { useState } from "react";
 import { useEffect } from "react";
+import Busheader from '../components/bus_nav';
+
 
 function Bus_view() {
   const [bus, setdrivers] = useState([]);
@@ -23,9 +25,13 @@ function Bus_view() {
     <>
    
    <Header />
-   
-   <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-300 via-teal-300 to-gray-700 relative"> 
-   <div className="bg-white rounded-lg shadow-xl overflow-hidden w-4/5 max-w-lg mx-auto"> 
+   <div style ={{position:"sticky", top: "0", left: "0"}}>
+     <Busheader/>
+     </div>
+     <body class="bg-gradient-to-br from-blue-400 to-green-300 min-h-screen flex flex-col items-center  " 
+      style={{minHeight:"120vh", margin:"0",padding:"0",backgroundImage: "url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", minHeight:"110vh" }}> 
+
+   <div className="p-4 bg-white rounded-lg shadow-xl overflow-hidden w-4/5 max-w-lg mx-auto"> 
    <table className="mb-2 min-w-full bg-gray-800 text-black"> 
    <caption className="text-2xl font-bold p-4 text-center bg-gray-50 text-gray-900 border-b border-gray-300 animate-pulse">Bus View</caption> 
         <thead>
@@ -48,7 +54,6 @@ function Bus_view() {
           ))}
         </tbody>
       </table>
-      </div>
       </div>
       
     {/* <div className="table-container"> 
@@ -75,7 +80,8 @@ function Bus_view() {
             </tbody> 
         </table> 
     </div>  */}
-    <footer style ={{position: "sticky" , top:"87vh", width:"100vw"}}>
+    </body>
+    <footer style ={{position: "sticky" , top:"100vh", width:"100vw"}}>
       <Footer/>
       </footer>
     </>

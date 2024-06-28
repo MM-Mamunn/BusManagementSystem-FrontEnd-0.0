@@ -43,10 +43,10 @@ function Driver_view() {
             <tbody>
               {drivers?.map((iterate) => (
                 <tr key={iterate?.bus_id} className="hover:bg-blue-100">
-                  <td style={{textShadow: "2px 2px 7px #000000"}} className="p-2 bg-green-200">{iterate?.driver_id}</td>
-                  <td style={{textShadow: "2px 2px 7px #000000"}}  className="p-2 bg-green-200">{iterate?.name}</td>
-                  <td style={{textShadow: "2px 2px 7px #000000"}}  className="p-2 bg-green-200">{iterate?.age}</td>
-                  <td style={{textShadow: "2px 2px 7px #000000"}}  className="p-2 bg-green-200">{iterate?.license_no}</td>
+                  <td  className="p-2 bg-green-200">{iterate?.driver_id}</td>
+                  <td   className="p-2 bg-green-200">{iterate?.name}</td>
+                  <td   className="p-2 bg-green-200">{iterate?.age}</td>
+                  <td   className="p-2 bg-green-200">{iterate?.license_no}</td>
                 </tr>
               ))}
             </tbody>

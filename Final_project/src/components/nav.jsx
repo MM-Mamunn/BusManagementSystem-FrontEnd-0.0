@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import driverImage from '../pages/image/bus2.png';
+import driverImage from '../pages/image/bus3.png';
 
 export default function Header() {
   return (
@@ -14,7 +14,8 @@ export default function Header() {
               isActive
                 ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded  p-2   font-bold'
                 : 'text-white-200 bg-sky-400 mt-1 mb-1  rounded   pl-2 pr-2   hover:text-blue-200'
-            }
+                
+              }
           >
             Home
           </NavLink>
@@ -22,9 +23,10 @@ export default function Header() {
             to="/trips_home"
             className={({ isActive }) =>
               isActive
-                ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded p-2    font-bold'
+                ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded p-2  font-bold'
                 : 'text-white-200 bg-sky-400 mt-1 mb-1  rounded   pl-2 pr-2   hover:text-blue-200'
             }
+            
           >
             Trip Home
           </NavLink>
@@ -58,9 +60,19 @@ export default function Header() {
           >
             Maintanace
           </NavLink>
+          <NavLink
+            to="/about_us"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded p-2    font-bold'
+                : 'text-white-200 bg-sky-400 mt-1 mb-1  rounded   pl-2 pr-2   hover:text-blue-200'
+            }
+          >
+            About Us
+          </NavLink>
         </div>
-        <a href ="/about_us" style={{padding: "10px",width:"130px"}} class="bg-indigo-950 p-2  text-white hover:text-blue-200 rounded">
-             About Us
+        <a href ="/home" style={{padding: "10px",width:"170px"}} class="bg-indigo-950 p-6  text-white hover:text-blue-200 rounded">
+             Bus Maintanance
             </a>
       </div>
     </nav>

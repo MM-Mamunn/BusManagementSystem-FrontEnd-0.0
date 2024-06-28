@@ -5,6 +5,7 @@ import Footer from '../components/footer'
 import "./CSS/main.css";
 import { useState } from "react";
 import { useEffect } from "react";
+import Busheader from '../components/bus_nav';
 // import Tripheader from '../components/trip_nav';
 
 function Bus_distane() {
@@ -31,9 +32,14 @@ function Bus_distane() {
   return (
     <>
       <Header />
+      <div style ={{position:"sticky", top: "0", left: "0"}}>
+     <Busheader/>
+     </div>
       {/* <Tripheader/> */}
+      <body class="bg-gradient-to-br from-blue-400 to-green-300 min-h-screen flex flex-col items-center  " 
+      style={{minHeight:"120vh", margin:"0",padding:"0",backgroundImage: "url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", minHeight:"110vh" }}> 
 
-      <form style={{marginLeft:"30vw" , width:"40vw"}} id= "bus_distane_box" className="mt-4 w-1/2" onSubmit={handleSubmit}>
+      <form style={{marginLeft:"34vw" , width:"40vw"}} id= "bus_distane_box" className="mt-4 w-1/2" onSubmit={handleSubmit}>
       <label for="too">From</label>
         <input 
           type="Date"
@@ -97,10 +103,10 @@ function Bus_distane() {
           </tbody>
         </table>
       )}
-      <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <footer style ={{position: "sticky" , top:"100vh", width:"100vw"}}>
       <Footer/>
       </footer>
-      
+      </body>
     </>
   );
 }
