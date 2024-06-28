@@ -4,6 +4,7 @@ import "./CSS/driver_view.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import Tripheader from '../components/trip_nav';
+import Footer from '../components/footer'
 function Trip_all() {
   const [trips, setdrivers] = useState([]);
   useEffect(() => {
@@ -20,7 +21,9 @@ function Trip_all() {
   return (
     <>
      <Header/>
+    <div style ={{position:"sticky", top: "0", left: "0"}}>
      <Tripheader/>
+     </div>
       <table class=" border-blue-500 rounded-sm ml-80 my-4">
         <thead>
           <tr>
@@ -43,6 +46,9 @@ function Trip_all() {
           ))}
         </tbody>
       </table>
+      <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

@@ -4,7 +4,8 @@ import axios from "axios";
 import "./CSS/main.css";
 import { useState } from "react";
 import { useEffect } from "react";
-import Tripheader from '../components/trip_nav';
+import Tripheader from "../components/trip_nav";
+import Footer from '../components/footer'
 
 function Count_trip() {
   const [drivers, setdrivers] = useState([]);
@@ -29,10 +30,17 @@ function Count_trip() {
   };
   return (
     <>
+     
       <Header />
-      <Tripheader/>
-      <form id= "count_trip_box" className="ml-80 mt-2 w-1/2" onSubmit={handleSubmit}>
-        <input 
+      <div style={{ position: "sticky", top: "0", left: "0" }}>
+        <Tripheader />
+      </div>
+      <form
+        id="count_trip_box"
+        className="ml-80 mt-2 w-1/2"
+        onSubmit={handleSubmit}
+      >
+        <input
           type="text"
           placeholder="driver_id"
           id="driver_id"
@@ -43,7 +51,6 @@ function Count_trip() {
           Count Trip
         </button>
       </form>
-      
 
       {drivers.length !== 0 && (
         <table className=" border-blue-500 rounded-sm ml-80 mt-4 ">
@@ -67,6 +74,9 @@ function Count_trip() {
           </tbody>
         </table>
       )}
+        <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

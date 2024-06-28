@@ -1,6 +1,6 @@
 
 import Header from '../components/nav'
-
+import Footer from '../components/footer'
 import mamunImage from './image/mamun.jpg';
 
 function About_us() {
@@ -45,6 +45,9 @@ function About_us() {
  
     </div> 
 </body>
+<footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

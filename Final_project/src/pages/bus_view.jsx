@@ -1,5 +1,6 @@
 import axios from "axios";
 import Header from "../components/nav";
+import Footer from '../components/footer'
 // import "./CSS/bus_view.css";
 // import "./CSS/driver_view.css";
 import { useState } from "react";
@@ -22,6 +23,7 @@ function Bus_view() {
     <>
    
    <Header />
+   
    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-300 via-teal-300 to-gray-700 relative"> 
    <div className="bg-white rounded-lg shadow-xl overflow-hidden w-4/5 max-w-lg mx-auto"> 
    <table className="mb-2 min-w-full bg-gray-800 text-black"> 
@@ -48,6 +50,7 @@ function Bus_view() {
       </table>
       </div>
       </div>
+      
     {/* <div className="table-container"> 
         <table className="table"> 
             <caption className="caption">Bus View</caption> 
@@ -72,6 +75,9 @@ function Bus_view() {
             </tbody> 
         </table> 
     </div>  */}
+    <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/nav";
 import Driverheader from "../components/driver_nav";
 import axios from "axios";
+import Footer from '../components/footer'
 
 function Driver_insert() {
   const navigate = useNavigate();
@@ -22,7 +23,9 @@ function Driver_insert() {
   return (
     <>
       <Header />
-      <Driverheader/>
+      <div style ={{position:"sticky", top: "0", left: "0"}}>
+     <Driverheader/>
+     </div>
       <form onSubmit={handleSubmit}>
         <a className="bg-green-500 text-white px-1 py-1 mx-2 rounded  my-2  " href="/driver_insert" >Insert Driver</a>
         <input
@@ -51,6 +54,9 @@ function Driver_insert() {
           Insert
         </button>
       </form>
+      <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

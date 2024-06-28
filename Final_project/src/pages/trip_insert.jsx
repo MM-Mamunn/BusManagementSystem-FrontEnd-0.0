@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/nav";
 import Tripheader from "../components/trip_nav";
 import axios from "axios";
+import Footer from '../components/footer'
 
 function Trip_insert() {
   const navigate = useNavigate();
@@ -21,8 +22,10 @@ function Trip_insert() {
   };
   return (
     <>
-      <Header />
-      <Tripheader/>
+     <Header/>
+    <div style ={{position:"sticky", top: "0", left: "0"}}>
+     <Tripheader/>
+     </div>
       <form onSubmit={handleSubmit} className="mt-10">
         <a className="bg-green-500 text-white px-1 py-1 mx-2 rounded  my-2  " href="/driver_insert" >Insert Driver</a>
         <input
@@ -49,7 +52,9 @@ function Trip_insert() {
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-6 mx-1 rounded">
           Insert
         </button>
-      </form>
+      </form><footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

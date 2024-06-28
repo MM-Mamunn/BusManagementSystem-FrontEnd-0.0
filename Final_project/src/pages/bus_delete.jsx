@@ -3,6 +3,7 @@ import Header from "../components/nav";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import Footer from '../components/footer'
 // import Tripheader from '../components/trip_nav';
 
 function Bus_delete() {
@@ -39,7 +40,9 @@ function Bus_delete() {
           Delete
         </button>
       </form>
-      
+      <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

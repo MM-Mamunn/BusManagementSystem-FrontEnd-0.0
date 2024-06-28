@@ -1,11 +1,54 @@
 import Header from '../components/nav'
+import Footer from '../components/footer'
 import busImage from './image/bus2.png';
 export default function Home(){
     return(
         <>
-        
         <Header/>
-        <img className="" src={busImage} alt="Bus" />
+        <body class="bg-gradient-to-br from-blue-400 to-green-300 min-h-screen flex flex-col items-center justify-center " 
+      style={{ backgroundImage: "url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')" }}> 
+    <h1 class="text-3xl font-bold text-center mb-8 text-black-700 animate-bounce"> 
+        <u class="no-underline inline-block animation fadeInOut">Bus Management System</u> 
+    </h1> 
+    <p class="text-xl mb-12 text-center">Complete Solution for Maintaining Your Buses</p> 
+ 
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-4xl"> 
+ 
+        <a href="/trips_home" class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform duration-300"> 
+            <h2 class="text-2xl font-semibold mb-4">Track the Buses</h2> 
+            <p>Track your buses by the Trip dashboard.That shows everything about trips.</p> 
+        </a> 
+ 
+        <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform duration-300"> 
+            <h2 class="text-2xl font-semibold mb-4">Maintenance Scheduling</h2> 
+            <p>Schedule and manage maintenance activities efficiently.</p> 
+        </div> 
+ 
+        <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform duration-300"> 
+            <h2 class="text-2xl font-semibold mb-4">Driver Management</h2> 
+            <p>Keep track of driver assignments and performance metrics.</p> 
+        </div> 
+ 
+        <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform duration-300"> 
+            <h2 class="text-2xl font-semibold mb-4">Fuel Monitoring</h2> 
+            <p>Monitor fuel consumption and optimize fuel efficiency.</p> 
+        </div> 
+ 
+        <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform duration-300"> 
+            <h2 class="text-2xl font-semibold mb-4">Route Planning</h2> 
+            <p>Plan and optimize bus routes for maximum efficiency.</p> 
+        </div> 
+ 
+        <div class="bg-white rounded-lg shadow-md p-6 transform hover:scale-105 transition-transform duration-300"> 
+            <h2 class="text-2xl font-semibold mb-4">Comprehensive Reports</h2> 
+            <p>Generate detailed reports for insights and decision making.</p> 
+        </div> 
+    </div> 
+</body>
+<footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
         </>
     )
 }
+

@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../components/nav";
 import axios from "axios";
+import Footer from '../components/footer'
 import "./CSS/main.css";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -72,6 +73,9 @@ function Bus_distane() {
           </tbody>
         </table>
       )}
+      <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

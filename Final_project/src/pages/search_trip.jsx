@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import Tripheader from '../components/trip_nav';
+import Footer from '../components/footer'
 
 function Search_trip() {
   const [drivers, setdrivers] = useState([]);
@@ -28,8 +29,10 @@ function Search_trip() {
   };
   return (
     <>
-      <Header />
-      <Tripheader/>
+     <Header/>
+<div style ={{position:"sticky", top: "0", left: "0"}}>
+     <Tripheader/>
+     </div>
       <form className="mt-4 w-1/2" onSubmit={handleSubmit}>
         <input 
           type="text"
@@ -52,6 +55,7 @@ function Search_trip() {
               <th className="p-2 bg-blue-200">Name</th>
               <th className="p-2 bg-blue-200">Bus Id</th>
               <th className="p-2 bg-blue-200">date</th>
+              <th className="p-2 bg-blue-200">Route Name</th>
             </tr>
           </thead>
           <tbody>
@@ -59,13 +63,17 @@ function Search_trip() {
               <tr key={i} className="hover:bg-blue-100">
                 <td className="p-2 bg-green-200">{iterate?.driver_id}</td>
                 <td className="p-2 bg-green-200">{iterate?.name}</td>
-                <td className="p-2 bg-green-200">{iterate?.age}</td>
+                <td className="p-2 bg-green-200">{iterate?.bus_id}</td>
                 <td className="p-2 bg-green-200">{iterate?.date}</td>
+                <td className="p-2 bg-green-200">{iterate?.route_name}</td>
               </tr>
             ))}
           </tbody>
         </table>
       )}
+      <footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }

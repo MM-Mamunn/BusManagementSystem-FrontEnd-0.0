@@ -1,6 +1,6 @@
-
 import Header from '../components/nav'
 import "./CSS/drivers_home.css";
+import Footer from '../components/footer'
 
 function Bus_home() {
   return (
@@ -13,6 +13,10 @@ function Bus_home() {
   <li className="bg-red-500 text-white px-4 py-2 rounded m-5 "><a href="" >Option 4</a></li>
   <li className="bg-purple-500 text-white px-4 py-2 rounded m-5 "><a href="" >Option 5</a></li>
 </ul>
+
+<footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      <Footer/>
+      </footer>
     </>
   );
 }
