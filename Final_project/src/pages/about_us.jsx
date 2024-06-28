@@ -2,6 +2,10 @@
 import Header from '../components/nav'
 import Footer from '../components/footer'
 import mamunImage from './image/mamun.jpg';
+import rayhanImage from './image/rayhan.jpeg';
+import mayeenImage from './image/mayeen.jpeg';
+import rafiImage from './image/rafi.jpeg';
+
 
 function About_us() {
   return (
@@ -16,27 +20,27 @@ function About_us() {
             <h2 class="text-xl font-semibold">Mamun Mahmud</h2> 
             <p>ID: C221046</p> 
             <p>Section: 5BM</p> 
-            <p>Mobile No: 01828383838</p> 
+            <p>Mobile No: 01854496276</p> 
         </div> 
  
         <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center"> 
-            <img src={mamunImage}  alt="Member 1" class="rounded-full mb-4 w-64 h-64"/> 
+            <img src={rayhanImage}  alt="Member 1" class="rounded-full mb-4 w-64 h-64"/> 
             <h2 class="text-xl font-semibold">Rayhan Uddain</h2> 
             <p>ID: C221050</p> 
             <p>Section: 5BM</p> 
-            <p>Mobile No: 01736475645</p> 
+            <p>Mobile No: 01642153475</p> 
         </div> 
  
         <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center"> 
-        <img src={mamunImage}  alt="Member 1" class="rounded-full mb-4 w-64 h-64"/>  
+        <img src={rafiImage}  alt="Member 1" class="rounded-full mb-4 w-64 h-64"/>  
             <h2 class="text-xl font-semibold">Najmus Sakib</h2> 
             <p>ID: C221060</p> 
             <p>Section: 5BM</p> 
-            <p>Mobile No: 01628384747</p> 
+            <p>Mobile No: 01626648842</p> 
         </div> 
  
         <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center"> 
-        <img src={mamunImage}  alt="Member 1" class="rounded-full mb-4 w-64 h-64"/> 
+        <img src={mayeenImage}  alt="Member 1" class="rounded-full mb-4 w-64 h-64"/> 
             <h2 class="text-xl font-semibold">Mayeen Uddin</h2> 
             <p>ID: C221047</p> 
             <p>Section: 5BM</p> 
@@ -44,7 +48,7 @@ function About_us() {
         </div> 
  
     </div> 
-<footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+<footer style ={{position: "sticky" , top:"100vh", width:"100vw"}}>
       <Footer/>
       </footer>
 </body>

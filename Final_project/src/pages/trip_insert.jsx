@@ -26,8 +26,11 @@ function Trip_insert() {
     <div style ={{position:"sticky", top: "0", left: "0"}}>
      <Tripheader/>
      </div>
+     <body class="bg-gradient-to-br from-blue-400 to-green-300 min-h-screen flex flex-col items-center  " 
+      style={{minHeight:"120vh", margin:"0",padding:"0",backgroundImage: "url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", minHeight:"110vh" }}> 
+
       <form onSubmit={handleSubmit} className="mt-10">
-        <a className="bg-green-500 text-white px-1 py-1 mx-2 rounded  my-2  " href="/driver_insert" >Insert Driver</a>
+        <div style={{textAlign:"center"}} className="bg-green-500 text-white px-1 py-1 mx-2 rounded  my-2  "  >Insert Trip</div>
         <input
           type="text"
           placeholder="Driver Id"
@@ -52,9 +55,11 @@ function Trip_insert() {
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-6 mx-1 rounded">
           Insert
         </button>
-      </form><footer style ={{position: "fixed" , top:"87vh", width:"100vw"}}>
+      </form>
+      <footer style ={{position: "sticky" , top:"100vh", width:"100vw"}}>
       <Footer/>
       </footer>
+      </body>
     </>
   );
 }

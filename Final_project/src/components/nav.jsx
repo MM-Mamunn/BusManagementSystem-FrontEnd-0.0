@@ -1,39 +1,68 @@
-import { Link } from "react-router-dom";
-import busImage from '../pages/image/bus2.png';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import driverImage from '../pages/image/bus2.png';
+
 export default function Header() {
   return (
-    <>
-      <nav class="bg-blue-500 p-4">
-        <div class="flex items-center justify-between">
-          <div class="flex space-x-6">            
-        <img className="w-24 h-8" src={busImage} alt="Bus" />
-            <a href="/home" class="text-white hover:text-blue-200">
-              Home
-            </a>
-            <a href="/trips_home" class="text-white hover:text-blue-200">
-              Trip Home
-            </a>
-            <a href="/drivers_home" class="text-white hover:text-blue-200">
-              Drivers Home
-            </a>
-            <a href="/bus_home" class="text-white hover:text-blue-200">
-              Bus Home
-            </a>
-            <a href="/coming_soon" class="text-white hover:text-blue-200">
-              Maintanance
-            </a>
-            <a href="/coming_soon" class="text-white hover:text-blue-200">
-              Coming Soon
-            </a>
-            <a href="/about_us" class="text-white hover:text-blue-200">
-              About Us
-            </a>
-          </div>
-          <a href="#" class="bg-indigo-950 p-2  ml-5 text-white hover:text-blue-200 rounded">
-             Bus Management
-            </a>
+    <nav style={{textShadow: "4px 4px 4px #0000ff",fontWeight:"40px"}} className="font-bold p-2 bg-blue-500">
+      <div className="flex items-center justify-between">
+        <div className="flex space-x-6">
+          <img className="w-16 h-12" src={driverImage} alt="Bus" />
+          <NavLink
+            to="/home"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded  p-2   font-bold'
+                : 'text-white-200 bg-sky-400 mt-1 mb-1  rounded   pl-2 pr-2   hover:text-blue-200'
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/trips_home"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded p-2    font-bold'
+                : 'text-white-200 bg-sky-400 mt-1 mb-1  rounded   pl-2 pr-2   hover:text-blue-200'
+            }
+          >
+            Trip Home
+          </NavLink>
+          <NavLink
+            to="/drivers_home"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded p-2    font-bold'
+                : 'text-white-200 bg-sky-400 mt-1 mb-1  rounded   pl-2 pr-2   hover:text-blue-200'
+            }
+          >
+            Drivers Home
+          </NavLink>
+          <NavLink
+            to="/bus_home"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded p-2    font-bold'
+                : 'text-white-200 bg-sky-400 mt-1 mb-1  rounded   pl-2 pr-2   hover:text-blue-200'
+            }
+          >
+            Bus Home
+          </NavLink>
+          <NavLink
+            to="/coming_soon"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-black-200 bg-blue-300 mt-1 mb-1  rounded p-2    font-bold'
+                : 'text-white-200 bg-sky-400 mt-1 mb-1  rounded   pl-2 pr-2   hover:text-blue-200'
+            }
+          >
+            Maintanace
+          </NavLink>
         </div>
-      </nav>
-    </>
+        <a href ="/about_us" style={{padding: "10px",width:"130px"}} class="bg-indigo-950 p-2  text-white hover:text-blue-200 rounded">
+             About Us
+            </a>
+      </div>
+    </nav>
   );
 }

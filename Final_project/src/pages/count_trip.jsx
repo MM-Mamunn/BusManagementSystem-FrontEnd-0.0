@@ -38,9 +38,10 @@ function Count_trip() {
       <body class="bg-gradient-to-br from-blue-400 to-green-300 min-h-screen flex flex-col items-center  " 
       style={{minHeight:"120vh", margin:"0",padding:"0",backgroundImage: "url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", minHeight:"110vh" }}> 
 
-      <form
-        id="count_trip_box"
-        className="ml-80 mt-2 w-1/2"
+      <form 
+       style = {{marginLeft:"575px", marginTop:"25vh"}}
+        id="Count Trip_box"
+        className="mt-2 w-1/2"
         onSubmit={handleSubmit}
       >
         <input
@@ -56,7 +57,7 @@ function Count_trip() {
       </form>
 
       {drivers.length !== 0 && (
-        <table className=" border-blue-500 rounded-sm ml-80 mt-4 ">
+        <table className=" border-blue-500 rounded-sm mt-4 ">
           <thead>
             <tr>
               <th className="p-2 bg-blue-200 ">Driver id</th>

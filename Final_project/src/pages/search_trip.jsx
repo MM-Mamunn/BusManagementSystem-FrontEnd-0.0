@@ -61,7 +61,7 @@ function Search_trip() {
             search
           </button>
         </form>
-
+        
         {drivers.length !== 0 && (
           <table
             style={{ marginLeft: "0vw", width: "26vw" }}
