@@ -16,7 +16,7 @@ function Driver_home() {
      <ul id = "lists"  className="list-none list-disc ml-20 mt-5">
   <li className="bg-blue-500 text-white px-4 py-2 rounded m-5  "><a href="/driver_insert" >Insert Driver</a></li>
   <li  className="bg-green-500 text-white px-4 py-2 rounded m-5 "><a href="/driver_view" >Show All Driver</a></li>
-  <li  className="bg-yellow-500 text-white px-4 py-2 rounded m-5 "><a href="/driver_update">update Driver</a></li>
+  <li  className="bg-yellow-500 text-white px-4 py-2 rounded m-5 "><a href="/coming_soon">Update Driver</a></li>
   <li className="bg-red-500 text-white px-4 py-2 rounded m-5 "><a href="/coming_soon" >Search Driver</a></li>
 </ul>
 </body>

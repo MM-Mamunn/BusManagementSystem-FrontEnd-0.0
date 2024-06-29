@@ -14,7 +14,7 @@ export default function Driverheader() {
             <a href="/driver_view" class="text-white hover:text-blue-200">
               Show All Driver
             </a>
-            <a href="/driver_update" class="text-white hover:text-blue-200">
+            <a href="/coming_soon" class="text-white hover:text-blue-200">
               Update Driver
             </a>
             <a href="/coming_soon" class="text-white hover:text-blue-200">

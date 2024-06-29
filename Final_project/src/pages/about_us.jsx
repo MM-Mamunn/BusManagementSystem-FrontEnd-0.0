@@ -3,7 +3,7 @@ import Header from '../components/nav'
 import Footer from '../components/footer'
 import mamunImage from './image/mamun.jpg';
 import rayhanImage from './image/rayhan.jpeg';
-import mayeenImage from './image/mayeen.jpeg';
+import mayeenImage from './image/mayeen2.jpeg';
 import rafiImage from './image/rafi.jpeg';
 
 
@@ -44,7 +44,7 @@ function About_us() {
             <h2 class="text-xl font-semibold">Mayeen Uddin</h2> 
             <p>ID: C221047</p> 
             <p>Section: 5BM</p> 
-            <p>Mobile No: 01937284746</p> 
+            <p>Mobile No: 01885363684</p> 
         </div> 
  
     </div> 

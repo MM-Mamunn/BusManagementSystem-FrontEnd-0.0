@@ -17,7 +17,7 @@ function Driver_update() {
         // console.log(res);
       })
       .catch((error) => {
-        // navigate("/failed");
+     //   navigate("/failed");
       });
   };
   return (
@@ -31,7 +31,7 @@ function Driver_update() {
           className="bg-green-500 text-white px-1 py-1 mx-2 rounded  my-2  "
           href="/driver_insert"
         >
-          Insert Driver
+          Update Driver
         </a>
         <input type="text" placeholder="id" id="id" name="id" required />
         <input
