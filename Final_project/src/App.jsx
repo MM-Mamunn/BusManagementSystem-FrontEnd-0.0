@@ -18,6 +18,7 @@ import About_us from "./pages/about_us";
 import Bus_distance from "./pages/bus_distance";
 import Bus_delete from "./pages/bus_delete";
 import Coming_soon from "./pages/coming_soon";
+import Driver_update from "./pages/driver_update";
 //import  './driver_insert.jsx';
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/home" element={<Home/>} />
             <Route path="/driver_insert" element={<Driver_insert/>} />
+            <Route path="/driver_update" element={<Driver_update/>} />
             <Route path="/trip_insert" element={<Trip_insert/>} />
             <Route path="/success" element={<Success/>} />
             <Route path="/driver_view" element={<Driver_view/>} />
